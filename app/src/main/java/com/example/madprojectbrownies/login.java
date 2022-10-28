@@ -43,9 +43,9 @@ public class login extends AppCompatActivity {
             }
         });
 
-        appbar3 = findViewById(R.id.appBar);
+        /*appbar3 = findViewById(R.id.appBar);
         setSupportActionBar(appbar3);
-        getSupportActionBar().setTitle("Login");
+        getSupportActionBar().setTitle("Login");*/
 
 
     }
