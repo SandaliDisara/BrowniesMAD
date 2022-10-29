@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Handle_Delivery_Details">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAddc"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:cornerRadius="15dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="ADD NEW USER"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSuccessc"
+        android:layout_width="200sp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_orange_dark"
+        android:text="CONFIRM ORDER"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+</LinearLayout>

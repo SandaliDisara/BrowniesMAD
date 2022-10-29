@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "288500526565",
+    "firebase_url": "https://the-chef-ce78e-default-rtdb.firebaseio.com",
+    "project_id": "the-chef-ce78e",
+    "storage_bucket": "the-chef-ce78e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288500526565:android:eb51ecdb05dd12661a130c",
+        "android_client_info": {
+          "package_name": "com.codingwithzo.realtimedbaddreadupdatedelete"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288500526565-pcqb9322q0nle3j9g7u1bch1nc5sjmik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2NiQ8SwtOVz9AZri39_aky0x_tFbqJAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288500526565-pcqb9322q0nle3j9g7u1bch1nc5sjmik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288500526565:android:169b1857e60617ab1a130c",
+        "android_client_info": {
+          "package_name": "com.example.mad_project_brownies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288500526565-pcqb9322q0nle3j9g7u1bch1nc5sjmik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2NiQ8SwtOVz9AZri39_aky0x_tFbqJAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288500526565-pcqb9322q0nle3j9g7u1bch1nc5sjmik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288500526565:android:f25b6a81aff327751a130c",
+        "android_client_info": {
+          "package_name": "com.example.madprojectbrownies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288500526565-pcqb9322q0nle3j9g7u1bch1nc5sjmik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2NiQ8SwtOVz9AZri39_aky0x_tFbqJAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288500526565-pcqb9322q0nle3j9g7u1bch1nc5sjmik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288500526565:android:13ab399d00bb8c101a130c",
+        "android_client_info": {
+          "package_name": "com.example.realtimedbaddreadupdatedelete"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288500526565-pcqb9322q0nle3j9g7u1bch1nc5sjmik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2NiQ8SwtOVz9AZri39_aky0x_tFbqJAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288500526565-pcqb9322q0nle3j9g7u1bch1nc5sjmik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

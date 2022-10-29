@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MADprojectBROWNIES</string>
+    <string name="txtOrderSuccess">Order Placed Successfully</string>
 </resources>
