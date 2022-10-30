@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -37,6 +38,8 @@ public class MainActivityF extends AppCompatActivity {
 
     Button buttonAddf;
 
+    Button Logo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +54,14 @@ public class MainActivityF extends AppCompatActivity {
         recyclerViewf.setLayoutManager(new LinearLayoutManager(this));
 
         foodItemArrayList = new ArrayList<>();
+
+        Button Logo = findViewById(R.id.buttonLogOutf);
+        Logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHome();
+            }
+        });
 
         buttonAddf = findViewById(R.id.buttonAddf);
         buttonAddf.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +96,11 @@ public class MainActivityF extends AppCompatActivity {
 
             }
         });
+    }
+
+    public  void openHome(){
+        Intent innn= new Intent(this,Home.class);
+        startActivity(innn);
     }
 
     public class ViewDialogAddf {
