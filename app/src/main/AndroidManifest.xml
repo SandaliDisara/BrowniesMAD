@@ -18,9 +18,7 @@
             android:name=".login"
             android:exported="false">
 
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+
         </activity>
         <activity
             android:name=".FoodItem"
@@ -56,7 +54,20 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".MainActivityRes"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".MainActivity2Res"
+            android:exported="false"
+            android:parentActivityName=".MainActivity2Res">
+        </activity>
+
+
     </application>
+
 
 </manifest>

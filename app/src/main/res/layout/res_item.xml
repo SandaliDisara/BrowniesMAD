@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/res_bg"
+    android:padding="4sp"
+    android:layout_margin="4sp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="286dp"
+        android:layout_height="320dp"
+        android:paddingLeft="80dp"
+        android:paddingTop="80dp"
+        app:srcCompat="@drawable/res" />
+
+    <TextView
+        android:id="@+id/textNamev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/textContactv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Contact No"/>
+
+    <TextView
+        android:id="@+id/textTablev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="No of Persons"/>
+
+    <TextView
+        android:id="@+id/textDatev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Date"/>
+
+    <TextView
+        android:id="@+id/textTimev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Time"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="4sp"
+        android:padding="4sp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonUpdatev"
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:shadowRadius="30"
+            android:text="UPDATE"
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonDeletev"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:background="@android:color/holo_red_light"
+            android:text="DELETE"
+            android:textColor="@android:color/white"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

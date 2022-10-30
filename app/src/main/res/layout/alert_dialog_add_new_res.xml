@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="10dp">
+
+
+        <EditText
+            android:id="@+id/textNamev"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:background="@color/lightorange"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/textContactv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:background="@color/lightorange"
+            android:gravity="center"
+            android:hint="Contact No"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:autofillHints="" />
+
+
+
+        <EditText
+            android:id="@+id/textTablev"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:background="@color/lightorange"
+            android:gravity="center"
+            android:hint="No of Persons"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textDatev"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@color/lightorange"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:hint="Date"
+            android:inputType="date"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textTimev"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:background="@color/lightorange"
+            android:gravity="center"
+            android:hint="Time"
+            android:inputType="time"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAddv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:background="@color/orange"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCancelv"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Exit"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
