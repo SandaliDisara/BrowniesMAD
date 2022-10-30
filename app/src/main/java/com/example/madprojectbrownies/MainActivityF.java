@@ -61,10 +61,10 @@ public class MainActivityF extends AppCompatActivity {
             }
         });
 
-        readData();
+        readDataf();
     }
 
-    private void readData() {
+    private void readDataf() {
 
         databaseReferencef.child("Food").orderByChild("foodName").addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")
