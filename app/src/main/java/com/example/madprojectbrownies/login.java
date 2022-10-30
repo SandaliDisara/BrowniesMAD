@@ -16,6 +16,8 @@ public class login extends AppCompatActivity {
     // private  Toolbar appbar3;
     private Button loginBtn;
 
+    private Button buttonLogOutf;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,6 +29,7 @@ public class login extends AppCompatActivity {
 
         TextView username = findViewById(R.id.loginNamef);
         TextView password = findViewById(R.id.loginPasswordf);
+
 
         loginBtn = findViewById(R.id.loginBtn);
         loginBtn.setOnClickListener(new View.OnClickListener() {
@@ -49,4 +52,6 @@ public class login extends AppCompatActivity {
         Intent intent5 = new Intent(this,MainActivityF.class);
         startActivity(intent5);
     }
+
+
 }
