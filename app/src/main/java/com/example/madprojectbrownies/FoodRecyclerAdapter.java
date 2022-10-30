@@ -22,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapter.ViewHolderf> {
+public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapter.ViewHolder> {
 
     Context context;
     ArrayList<FoodItem> foodItemArrayList;
@@ -36,14 +36,14 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
 
     @NonNull
     @Override
-    public ViewHolderf onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater layoutInflaterf = LayoutInflater.from(context);
-        View viewf = layoutInflaterf.inflate(R.layout.food_item, parent, false);
-        return new ViewHolderf(viewf);
+    public FoodRecyclerAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View view = layoutInflater.inflate(R.layout.food_item, parent, false);
+        return new FoodRecyclerAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FoodRecyclerAdapter.ViewHolderf holder, int position) {
+    public void onBindViewHolder(@NonNull FoodRecyclerAdapter.ViewHolder holder, int position) {
 
         FoodItem foodItem = foodItemArrayList.get(position);
 
@@ -53,17 +53,17 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
 
         holder.buttonUpdatef.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View viewf) {
-                FoodRecyclerAdapter.ViewDialogUpdatef viewDialogUpdatef = new FoodRecyclerAdapter.ViewDialogUpdatef();
-                viewDialogUpdatef.showDialogf(context, foodItem.getFoodID(), foodItem.getFoodName(), foodItem.getFoodPrice(), foodItem.getFoodDescription());
+            public void onClick(View view) {
+                FoodRecyclerAdapter.ViewDialogUpdatef viewDialogUpdate = new FoodRecyclerAdapter.ViewDialogUpdatef();
+                viewDialogUpdate.showDialog(context, foodItem.getFoodID(), foodItem.getFoodName(), foodItem.getFoodPrice(), foodItem.getFoodDescription());
             }
         });
 
         holder.buttonDeletef.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FoodRecyclerAdapter.ViewDialogConfirmDeletef viewDialogConfirmDeleteff = new FoodRecyclerAdapter.ViewDialogConfirmDeletef();
-                viewDialogConfirmDeleteff.showDialogf(context, foodItem.getFoodID());
+                FoodRecyclerAdapter.ViewDialogConfirmDeletef viewDialogConfirmDelete = new FoodRecyclerAdapter.ViewDialogConfirmDeletef();
+                viewDialogConfirmDelete.showDialog(context, foodItem.getFoodID());
             }
         });
 
@@ -74,7 +74,7 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
         return foodItemArrayList.size();
     }
 
-    public static class ViewHolderf extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView textNamef;
         TextView textPricef;
@@ -83,7 +83,7 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
         Button buttonDeletef;
         Button buttonUpdatef;
 
-        public ViewHolderf(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             textNamef = itemView.findViewById(R.id.textNamef);
@@ -96,30 +96,30 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
     }
 
     public class ViewDialogUpdatef {
-        public void showDialogf(Context context, String idf, String namef, String pricef, String descriptionf) {
-            final Dialog dialogf = new Dialog(context);
-            dialogf.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialogf.setCancelable(false);
-            dialogf.setContentView(R.layout.activity_dialog_add_new_item);
+        public void showDialog(Context context, String id, String name, String price, String description) {
+            final Dialog dialog = new Dialog(context);
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            dialog.setCancelable(false);
+            dialog.setContentView(R.layout.activity_dialog_add_new_item);
 
-            EditText textNamef = dialogf.findViewById(R.id.textNamef);
-            EditText textPricef = dialogf.findViewById(R.id.textPricef);
-            EditText textDescriptionf = dialogf.findViewById(R.id.textDescriptionf);
+            EditText textNamef = dialog.findViewById(R.id.textNamef);
+            EditText textPricef = dialog.findViewById(R.id.textPricef);
+            EditText textDescriptionf = dialog.findViewById(R.id.textDescriptionf);
 
-            textNamef.setText(namef);
-            textPricef.setText(pricef);
-            textDescriptionf.setText(descriptionf);
+            textNamef.setText(name);
+            textPricef.setText(price);
+            textDescriptionf.setText(description);
 
 
-            Button buttonUpdatef = dialogf.findViewById(R.id.buttonAddf);
-            Button buttonCancelf = dialogf.findViewById(R.id.buttonCancelf);
+            Button buttonUpdatef = dialog.findViewById(R.id.buttonAddf);
+            Button buttonCancelf = dialog.findViewById(R.id.buttonCancelf);
 
             buttonUpdatef.setText("UPDATE");
 
             buttonCancelf.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    dialogf.dismiss();
+                    dialog.dismiss();
                 }
             });
 
@@ -131,16 +131,16 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
                     String newPrice = textPricef.getText().toString();
                     String newDescription = textDescriptionf.getText().toString();
 
-                    if (namef.isEmpty() || pricef.isEmpty() || descriptionf.isEmpty()) {
+                    if (name.isEmpty() || price.isEmpty() || description.isEmpty()) {
                         Toast.makeText(context, "Please Enter All data...", Toast.LENGTH_SHORT).show();
                     } else {
 
-                        if (newName.equals(namef) && newPrice.equals(pricef) && newDescription.equals(descriptionf)) {
+                        if (newName.equals(name) && newPrice.equals(price) && newDescription.equals(description)) {
                             Toast.makeText(context, "you don't change anything", Toast.LENGTH_SHORT).show();
                         } else {
-                            databaseReferencef.child("Food").child(idf).setValue(new FoodItem(idf, newName, newPrice, newDescription));
+                            databaseReferencef.child("Food").child(id).setValue(new FoodItem(id, newName, newPrice, newDescription));
                             Toast.makeText(context, "Food Updated successfully!", Toast.LENGTH_SHORT).show();
-                            dialogf.dismiss();
+                            dialog.dismiss();
                         }
 
 
@@ -148,45 +148,44 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
                 }
             });
 
-            dialogf.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialogf.show();
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialog.show();
 
         }
     }
 
 
     public class ViewDialogConfirmDeletef {
-        public void showDialogf(Context context, String id) {
-            final Dialog dialogf = new Dialog(context);
-            dialogf.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialogf.setCancelable(false);
-            dialogf.setContentView(R.layout.view_dialog_confirm_delete);
+        public void showDialog(Context context, String id) {
+            final Dialog dialog = new Dialog(context);
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            dialog.setCancelable(false);
+            dialog.setContentView(R.layout.view_dialog_confirm_deletef);
 
-            Button buttonDeletef = dialogf.findViewById(R.id.buttonDeletef);
-            Button buttonCancelf = dialogf.findViewById(R.id.buttonCancelf);
+            Button buttonDelete = dialog.findViewById(R.id.buttonDeletef);
+            Button buttonCancel = dialog.findViewById(R.id.buttonCancelf);
 
-            buttonCancelf.setOnClickListener(new View.OnClickListener() {
+            buttonCancel.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    dialogf.dismiss();
+                    dialog.dismiss();
                 }
             });
 
-            buttonDeletef.setOnClickListener(new View.OnClickListener() {
+            buttonDelete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
                     databaseReferencef.child("Food").child(id).removeValue();
                     Toast.makeText(context, "Food Deleted successfully!", Toast.LENGTH_SHORT).show();
-                    dialogf.dismiss();
+                    dialog.dismiss();
 
                 }
             });
 
-            dialogf.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialogf.show();
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialog.show();
 
         }
     }
 }
-
