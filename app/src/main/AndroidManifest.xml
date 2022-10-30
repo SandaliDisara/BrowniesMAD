@@ -55,7 +55,15 @@
             android:name=".MainActivity"
             android:exported="false">
         </activity>
-        
+        <activity
+            android:name=".MainActivityRes"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".MainActivity2Res"
+            android:exported="false"
+            android:parentActivityName=".MainActivity2Res">
+        </activity>
 
 
     </application>
