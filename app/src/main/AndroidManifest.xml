@@ -14,20 +14,44 @@
         android:theme="@style/Theme.MADprojectBROWNIES"
         tools:targetApi="31">
         <activity
-            android:name=".Menu_Items_Recycler"
-            android:exported="false" />
+            android:name=".FoodItem"
+            android:exported="false"
+            tools:ignore="Instantiatable">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
-            android:name=".Handle_Delivery_Details"
+            android:name=".MainActivityF"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".login"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Menu_Items_Recycler"
+            android:exported="false" />
+        <activity
+            android:name=".Handle_Delivery_Details"
+            android:exported="false">
+
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

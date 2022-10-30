@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FF8351</color>
     <color name="red">#FF1111</color>
+
+
+    <color name="lightorange">#F7DEBA</color>
+    <color name="orange_new">#CDC9C3</color>
+    <color name="logOut">#CDDC39</color>
 </resources>
