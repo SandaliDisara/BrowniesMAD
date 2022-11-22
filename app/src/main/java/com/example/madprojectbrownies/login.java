@@ -16,6 +16,8 @@ public class login extends AppCompatActivity {
     // private  Toolbar appbar3;
     private Button loginBtn;
 
+    private Button Buttonb;
+
     private Button buttonLogOutf;
 
 
@@ -26,6 +28,12 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.orange)));
         getSupportActionBar().setTitle("Login");
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+
+
 
         TextView username = findViewById(R.id.loginNamef);
         TextView password = findViewById(R.id.loginPasswordf);
@@ -53,5 +61,8 @@ public class login extends AppCompatActivity {
         startActivity(intent5);
     }
 
+    public void openH(){
+        Intent in6 = new Intent(this,Home.class);
+    }
 
 }

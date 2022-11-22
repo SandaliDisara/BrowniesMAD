@@ -16,6 +16,9 @@
         android:backgroundTint="@color/orange_for_buttons"
         android:shadowRadius="10"
         android:text="@string/homePlaceOrderBtn"
+        android:backgroundTint="@color/orange"
+        android:shadowRadius="10"
+        android:text="Place Order"
         android:textAllCaps="false"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -23,9 +26,32 @@
         app:layout_constraintBottom_toTopOf="@+id/homeReservationbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.57" />
+
+
+    <Button
+        android:id="@+id/homePlaceOrderbtn2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/orange"
+        android:shadowRadius="10"
+        android:text="View Menu"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeReservationbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/homeReservationbtn"
@@ -34,6 +60,8 @@
         android:layout_marginBottom="11dp"
         android:backgroundTint="@color/orange_for_buttons"
         android:text="@string/homeReservationBtn"
+        android:backgroundTint="@color/orange"
+        android:text="Reservation"
         android:textAllCaps="false"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -41,6 +69,7 @@
         app:layout_constraintBottom_toTopOf="@+id/homeRecipebtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/homePlaceOrderbtn" />
 
@@ -55,6 +84,14 @@
         android:textStyle="bold"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toTopOf="@+id/homeContactbtn"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/orange"
+        android:text="Recipes"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,6 +119,11 @@
         android:layout_height="55dp"
         android:backgroundTint="@color/orange_for_inputs"
         android:text="@string/homeLoginAdmin"
+        android:id="@+id/Adminloginbtn"
+        android:layout_width="81dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/orange"
+        android:text="Admin Login"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="10dp"
@@ -100,6 +142,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:text="@string/homePageTitle"
+        android:text="Home"
         android:textColor="@color/black"
         android:textSize="35dp"
         android:textStyle="bold"
@@ -108,5 +151,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.98" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="224dp"
+        android:backgroundTint="@color/orange"
+        android:text="Place Order"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/orange"
+        android:text="Recipes"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

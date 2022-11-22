@@ -5,24 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Menu_Items_Recycler">
+    tools:context=".MainActivityRes">
+
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerMenu"
+        android:id="@+id/recyclerViewv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        tools:visibility="visible"
+
+        />
+
+
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCartCheckout"
-        android:layout_width="200sp"
+
+        android:id="@+id/buttonAddv"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:layout_gravity="center"
-        android:background="@android:color/holo_orange_dark"
-        android:text="CHECKOUT CART"
-        android:textColor="@android:color/black"
+        android:backgroundTint="@color/orange"
+        android:text="New Reservation"
+        android:textColor="@android:color/white"
         android:textStyle="bold"/>
+
 
 </LinearLayout>
