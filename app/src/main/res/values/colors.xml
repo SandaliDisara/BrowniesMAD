@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FF8351</color>
     <color name="red">#FF1111</color>
+    <color name="orange_for_buttons">#FDA452</color>
+    <color name="orange_for_inputs">#D7F8BAA2</color>
 
 
     <color name="lightorange">#F7DEBA</color>

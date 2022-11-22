@@ -1,4 +1,40 @@
 <resources>
     <string name="app_name">MADprojectBROWNIES</string>
     <string name="txtOrderSuccess">Order Placed Successfully</string>
+    <string name="AddRecipeTitle">Add Recipe</string>
+    <string name="addRecipeName">Recipe Name</string>
+    <string name="addRecipeNameHint">Enter recipe name here...</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="recipeName">Recipe Name</string>
+    <string name="addIngredientsHint">Enter ingredients here...</string>
+    <string name="method">Method</string>
+    <string name="addMethodHint">Type the method here...</string>
+    <string name="addButton">Add</string>
+    <string name="deleteTitle">Delete</string>
+    <string name="deleteConfirmMessage">Are you sure?</string>
+    <string name="deleteConfirmYes">Yes</string>
+    <string name="deleteConfirmNo">No</string>
+    <string name="deleteErrorMessage">Error Occured !</string>
+    <string name="okButton">Ok</string>
+    <string name="deleteSuccessfulMessage">Deleted !</string>
+    <string name="editRecipeTitle">Edit Recipe</string>
+    <string name="updateButton">Update</string>
+    <string name="myRecipeTitle">My Recipe</string>
+    <string name="recipeListHeading">Recipe List</string>
+    <string name="editButton">edit</string>
+    <string name="deleteButton">delete</string>
+    <string name="recipeTitle">Recipe</string>
+    <string name="successfulMessage">Successful !</string>
+    <string name="ingredientsView">Ingredient 01.....</string>
+    <string name="methodView">Method is explained here...</string>
+    <string name="homePageTitle">Home</string>
+    <string name="homePlaceOrderBtn">Place Order</string>
+    <string name="homeReservationBtn">Reservation</string>
+    <string name="homeRecipesBtn">Recipes</string>
+    <string name="homeContactUs">Contact Us</string>
+    <string name="homeLoginAdmin">Admin Login</string>
+
+    <string name="homeFloatingMenuBtn">menu</string>
+    <string name="homeFloatingProfileBtn">profile</string>
+    <string name="homeFloatingHomebtn">home</string>
 </resources>
